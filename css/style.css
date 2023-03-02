@@ -52,42 +52,11 @@ main > div > p {
   font-size: 17px;
   color: var(--darkMagenta);
 }
-.opinions > div {
-  box-sizing: border-box;
-  width: 100%;
-  margin-bottom: 16px;
-  padding: 40px 32px 35px 32px;
-  background-color: var(--darkMagenta);
-  border-radius: 8px;
-}
-.opinions > div > div {
-  display: inline-block;
-  margin-left: 23px;
-}
-.opinions img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-.opinions h2 {
-  margin-bottom: 4px;
-  font-size: 17px;
-  font-weight: 700;
-  color: white;
-}
-.opinions h3 {
-  margin-bottom: 24px;
-  padding-bottom: 4px;
-  font-size: 17px;
-  font-weight: 500;
-  color: var(--softPink);
-}
-.opinions p {
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 25px;
-  color: white;
-}
+
+
+
+
+
 footer {
   text-align: center;
 }
@@ -107,8 +76,8 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 70%;
-    max-width: 1110px;
+    width: 90%;
+    max-width: 1200px;
     margin: 118px auto;
   }
   main div:first-child {
@@ -125,11 +94,14 @@ footer a {
     margin-bottom: 71px;
     text-align: left;
   }
+  .rated {
+    margin-top: 15px;
+  }
   .rated > div {
-    /* box-sizing: border-box; */
     display: flex;
     width: 30vw;
-    min-width: 400px;
+    min-width: 200px;
+    max-width: 500px;
     padding-bottom: 0;
   }
   .rated h2 {
@@ -143,4 +115,4 @@ footer a {
   .rated > div:nth-child(2) {
     margin-left: -45px;
   }
-}
+  
