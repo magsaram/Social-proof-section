@@ -27,6 +27,7 @@ h1 {
   margin-bottom: 17px;
   font-size: 40px;
   line-height: 32px;
+  font-weight: 700;
   text-align: center;
   color: var(--darkMagenta);
 }
@@ -37,7 +38,7 @@ main > div > p {
   text-align: center;
   color: var(--darkGreyMagenta);
 }
-.rated > div {
+.rate {
   width: 100%;
   margin-bottom: 16px;
   padding-bottom: 16px;
@@ -52,11 +53,42 @@ main > div > p {
   font-size: 17px;
   color: var(--darkMagenta);
 }
-
-
-
-
-
+.opinions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 49px;
+}
+.opinion {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--darkMagenta);
+  border-radius: 8px;
+  padding: 40px 32px;
+}
+.opinions div img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+  margin-bottom: 23px;
+}
+.opinions h2 {
+  font-size: 17px;
+  color: white;
+}
+.opinions h3 {
+  font-size: 17px;
+  color: var(--softPink);
+  font-weight: 400;
+}
+.opinions p {
+  font-size: 17px;
+  line-height: 22px;
+  color: white;
+}
 footer {
   text-align: center;
 }
@@ -80,7 +112,7 @@ footer a {
     max-width: 1200px;
     margin: 118px auto;
   }
-  main div:first-child {
+  .h1 {
     flex-basis: 40%;
   }
   h1 {
@@ -94,25 +126,58 @@ footer a {
     margin-bottom: 71px;
     text-align: left;
   }
+  .rate {
+    justify-content: center;
+    align-items: center;
+  }
   .rated {
     margin-top: 15px;
+  }
+  .stars {
+    margin-bottom: 15px;
+    margin-right: 15px;
   }
   .rated > div {
     display: flex;
     width: 30vw;
     min-width: 200px;
     max-width: 500px;
-    padding-bottom: 0;
+    height: 56px;
+    padding-bottom: 0px;
   }
   .rated h2 {
     font-size: 17px;
-    margin: 20px 0;
+    margin: 0;
   }
-
   .rated > div:nth-child(1) {
     margin-left: -90px;
   }
   .rated > div:nth-child(2) {
     margin-left: -45px;
   }
-  
+  .opinions {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 49px;
+    width: 100%;
+    max-width: 1440px;
+  }
+  .opinion {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 200px;
+    height: 234px;
+    background-color: var(--darkMagenta);
+    border-radius: 8px;
+    padding: 40px 32px auto 32px;
+  }
+  .second {
+    margin-top: 16px;
+  }
+  .third {
+    margin-top: 32px;
+  }
+}
